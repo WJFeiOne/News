@@ -4,6 +4,8 @@
 
 
 import Vue from "vue";                // 导入 Vue 库文件
+import Vant from 'vant';              // 导入 Vant-UI 组件
+import axios from "axios";            // 导入 axios 组件
 import VueRouter from "vue-router";   // 导入 路由构造函数
 import App from "@/App";              // 导入 入口组件
 import Login from "@/pages/Login";    // 导入 登录组件
@@ -13,11 +15,23 @@ import Login from "@/pages/Login";    // 导入 登录组件
 Vue.use(VueRouter);
 
 
+// 注册 Vant-UI 组件
+Vue.use(Vant)
+
+
+// 把 axios 挂载到原型
+Vue.prototype.$axios=axios;
+
+
+// 基准路径，以后每次请求都会自动在前面加上该路径
+axios.defaults.baseURL = "http://localhost:3000";
+
+
 // 创建 路由配置
 const routes = [
     { path: "/login", component: Login} // 匹配 登录组件地址
 ]
- 
+
 
 // 创建 路由对象
 const router = new VueRouter({
