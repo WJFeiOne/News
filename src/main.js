@@ -9,6 +9,7 @@ import axios from "axios";            // 导入 axios 组件
 import VueRouter from "vue-router";   // 导入 路由构造函数
 import App from "@/App";              // 导入 入口组件
 import Login from "@/pages/Login";    // 导入 登录组件
+import Register from "@/pages/Register"  // 导入 注册组件
 
 
 // 注册 路由组件 插件
@@ -29,7 +30,8 @@ axios.defaults.baseURL = "http://localhost:3000";
 
 // 创建 路由配置
 const routes = [
-    { path: "/login", component: Login} // 匹配 登录组件地址
+    { path: "/login", component: Login}, // 匹配 登录组件地址
+    { path: "/register", component: Register} // 匹配 注册组件地址
 ]
 
 

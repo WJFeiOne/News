@@ -15,7 +15,7 @@
         <span class="iconfont iconnew"></span>
     </div>
 
-    <!-- 用户名输入框 -->
+    <!-- 用户登录输入框 -->
     <div class="input">
 
       <!-- 用户名输入框组件 -->
@@ -30,11 +30,19 @@
       <!-- 密码输入框组件 -->
       <AuthInput
         placeholder="密码"
+        type="password"
         v-model="form.password"
         :rule="/^[0-9a-zA-Z]{3,12}$/"
         err_message="密码格式不正确"
       ></AuthInput>
     </div>
+
+    <!-- 注册提示 -->
+    <p class="tips">
+      没有账号？
+      <!-- 注册链接 -->
+      <router-link to="/register">去注册</router-link>
+    </p>
 
     <!-- 登录按钮 -->
     <AuthButton text="登录" @click="handleSubmit" />
@@ -55,10 +63,10 @@ export default {
     data() {
         // 返回 登录信息 数据
         return {
-        // 指定 登录表单 数据数据
+        // 指定 登录表单 数据
         form: {
         username: "", // 接收 用户名
-        password: "" // 接收 用密码
+        password: ""  // 接收 用户密码
       }
     };
   },
@@ -97,14 +105,15 @@ export default {
 <style scoped lang="less">
 // 关闭按钮样式
 .container {
-  padding: 20px;
+  padding: 20/ 360 * 100vw;
   .close {
     span {
       font-size: 27 / 360 * 100vw;
     }
   }
 }
-//  logo样式
+
+// logo 样式
 .logo {
   display: flex;
   justify-content: center;
@@ -118,7 +127,17 @@ export default {
 // 输入框样式
 .inputs {
   input {
-    margin-bottom: 20px;
+    margin-bottom: 20 / 360 * 100vw;
   }
+}
+
+// 注册提示样式
+.tips{
+  text-align:right;
+  margin-bottom: 20 / 360 * 100vw;
+  font-size: 16/ 360 * 100vw;
+  a{
+  color: #3385ff;
+ }
 }
 </style>
