@@ -44,10 +44,10 @@ a:hover{
 }
 
 ul,li,ol{
-    list-style: none,  /* 去除列表默认样式 */
+    list-style: none;  /* 去除列表默认样式 */
 }
 
 i,em{
-    font-style: normal,  /* 设置标签为正常字体 */
+    font-style: normal; /* 设置标签为正常字体 */
 }
 </style>

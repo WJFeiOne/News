@@ -91,10 +91,12 @@ export default {
         url: "/login",   // 请求 数据 接口
         method: "POST",  // 请求 数据 方式
         data: this.form  // 请求 数据 参数
-      }).then(res => {                  // 接收 数据响应 数据
-        const { message } = res.data;   // 解构 请求状态 数据
-        if (message === "登录成功") {    // 判断 请求状态是否成功 
-            this.$router.push("/");     // 请求成功 跳转到首页
+      }).then(res => {                     // 接收 数据响应 数据
+        const {message, data} = res.data;  // 解构 请求状态 数据
+        if (message === "登录成功") {       // 判断 请求状态是否成功 
+          localStorage.setItem("token", data.token);      // 请求成功 把 token 保存到本地
+          localStorage.setItem("user_id", data.user.id);  // 请求成功 把 用户id 保存到本地
+          this.$router.push("/personal");                 // 请求成功 跳转到 个人中心 页面
         }
       });
     }

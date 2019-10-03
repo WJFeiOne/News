@@ -14,8 +14,11 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 // 导入 清除dist 目录插件
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
-// 引入 vue-loader 插件
+// 导入 vue-loader 插件
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+
+// 导入 复制文件夹 插件
+const CopyPlugin = require("copy-webpack-plugin");
 
 
 // webpack 的配置
@@ -99,7 +102,11 @@ module.exports = {
             template: "public/index.html" // template 指定默认 html 模板
         }),
 
-        new VueLoaderPlugin() // vue 加载器插件
+        new VueLoaderPlugin(), // vue 加载器插件
+
+        new CopyPlugin([
+            { from: 'static', to: 'static' },  // 复制 static 文件夹到 dist 文件夹中 
+        ]),
     ]
 
 }
