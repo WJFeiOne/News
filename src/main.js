@@ -12,6 +12,7 @@ import Login from "@/pages/Login";    // 导入 登录组件
 import Register from "@/pages/Register"  // 导入 注册组件
 import {Toast} from "vant"               // 导入 轻提示组件
 import Personal from "@/pages/Personal"; // 导入 个人中心组件
+import EditProfile from "@/pages/EditProfile";  // 导入 编辑资料组件
 
 
 // 注册 路由组件 插件
@@ -34,7 +35,8 @@ axios.defaults.baseURL = "http://localhost:3000";
 const routes = [
     { path: "/login", component: Login}, // 匹配 登录组件地址
     { path: "/register", component: Register}, // 匹配 注册组件地址
-    { path: "/personal", component: Personal}  // 匹配 个人中心组件地址
+    { path: "/personal", component: Personal},  // 匹配 个人中心组件地址
+    { path: "/edit_profile", component: EditProfile }  // 匹配 编辑资料组件地址
 ]
 
 
@@ -53,7 +55,7 @@ router.beforeEach( (to, from, next) => {
     const hasToken = localStorage.getItem("token");
 
     // 判断是否 需要登陆权限
-    if(to.path === "/personal"){
+    if(to.path === "/personal" || to.path === "/edit_profile"){
         // 判断本地是否有 token
         if(hasToken){
             // 有 token 正常跳转

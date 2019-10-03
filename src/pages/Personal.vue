@@ -4,6 +4,8 @@
 <template>
     <!-- 个人中心组件 -->
     <div>
+        <!-- 添加 点击跳转到 编辑页面 -->
+        <router-link to="/edit_profile">
         <div class="profile">
             <!-- 用户头像 -->
             <img :src="profile.head_img" alt />
@@ -19,6 +21,7 @@
             <!-- 字体箭头 -->
             <span class="iconfont iconjiantou1"></span>
         </div>
+        </router-link>
         <!-- 调用条形组件 -->
         <CellBar label="我的关注" text="关注的用户" />
         <!-- 调用条形组件 -->
@@ -78,8 +81,7 @@ export default {
                 // 判断是否有 用户头像
                 if (data.head_img) {
                     // 指定当前 用户头像
-                    this.profile.head_img =
-                        this.$axios.defaults.baseURL + profile.head_img;
+                    this.profile.head_img = this.$axios.defaults.baseURL + data.head_img;
                 } else {
                     // 指定 默认头像
                     this.profile.head_img = "./static/default_green.jpg";

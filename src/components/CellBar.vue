@@ -8,7 +8,7 @@
             <!-- 左侧内容 -->
             <span>{{label}}</span>
             <!-- 右侧内容 -->
-            <i>{{text}}</i>
+            <i>{{ type === 'password'? '******' : text}}</i>
             <!-- 字体箭头 -->
             <span class="iconfont iconjiantou1"></span>
         </div>
@@ -20,7 +20,7 @@
 // 条形码组件实例
 export default {
     // 定义 组件接收的参数
-    props: ["label", "text"]
+    props: ["label", "text", "type"]
 };
 </script>
 
