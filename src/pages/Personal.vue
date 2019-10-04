@@ -27,8 +27,11 @@
             <CellBar label="我的关注" text="关注的用户"/>
         </router-link>
 
-        <!-- 调用条形组件 -->
-        <CellBar label="我的跟帖" text="跟帖/回复" />
+        <!-- 调用条形组件 添加我的跟帖组件-->
+        <router-link to="/user_comment">
+            <CellBar label="我的跟帖" text="跟帖/回复"/>
+        </router-link>
+
         <!-- 调用条形组件 -->
         <CellBar label="我的收藏" text="文章/视频" />
         <!-- 调用条形组件 -->
