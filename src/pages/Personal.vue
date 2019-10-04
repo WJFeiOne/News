@@ -22,8 +22,11 @@
             <span class="iconfont iconjiantou1"></span>
         </div>
         </router-link>
-        <!-- 调用条形组件 -->
-        <CellBar label="我的关注" text="关注的用户" />
+        <!-- 调用条形组件 添加我的关注组件-->
+        <router-link to="/user_follow">
+            <CellBar label="我的关注" text="关注的用户"/>
+        </router-link>
+
         <!-- 调用条形组件 -->
         <CellBar label="我的跟帖" text="跟帖/回复" />
         <!-- 调用条形组件 -->

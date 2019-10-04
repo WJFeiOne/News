@@ -13,6 +13,7 @@ import Register from "@/pages/Register"  // 导入 注册组件
 import {Toast} from "vant"               // 导入 轻提示组件
 import Personal from "@/pages/Personal"; // 导入 个人中心组件
 import EditProfile from "@/pages/EditProfile";  // 导入 编辑资料组件
+import UserFollow from "@/pages/UserFollow";    // 导入 我的关注组件
 
 
 // 注册 路由组件 插件
@@ -36,7 +37,8 @@ const routes = [
     { path: "/login", component: Login}, // 匹配 登录组件地址
     { path: "/register", component: Register}, // 匹配 注册组件地址
     { path: "/personal", component: Personal},  // 匹配 个人中心组件地址
-    { path: "/edit_profile", component: EditProfile }  // 匹配 编辑资料组件地址
+    { path: "/edit_profile", component: EditProfile },  // 匹配 编辑资料组件地址
+    { path: "/user_follow", component: UserFollow }     // 匹配 我的关注组件地址
 ]
 
 
