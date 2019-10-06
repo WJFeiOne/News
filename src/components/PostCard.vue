@@ -8,8 +8,11 @@
         <div class="card" v-if="post.cover.length > 0 && post.cover.length < 3 && post.type === 1">
             <!-- 左侧文字 -->
             <div class="card-left">
-                <!-- 文章标题 -->
-                <div class="post-title">{{post.title}}</div>
+                <!-- 文章标题 添加链接-->
+                <router-link :to="`/post_detail/${post.id}`">
+                    {{post.title}}
+                </router-link>
+                <!-- 作者资料 -->
                 <p class="post-info">
                     <!-- 作者昵称 -->
                     <span>{{post.user.nickname}}</span>
@@ -17,20 +20,29 @@
                     <span>{{post.comment_length}}跟帖</span>
                 </p>
             </div>
+             <!-- 右侧图片 -->
             <div class="card-img">
-                <!-- 文章图片 -->
-                <img :src="post.cover[0].url" alt />
+                <!-- 文章图片 添加链接-->
+                <router-link :to="`/post_detail/${post.id}`">
+                    <img :src="post.cover[0].url" alt="">
+                </router-link>
             </div>
         </div>
 
         <!-- 多张图片显示布局组件 -->
         <div class="img-cart" v-if="post.cover.length >= 3">
-            <!-- 文章标题 -->
-            <div class="post-title">{{post.title}}</div>
-            <!-- 文章图片 -->
+            <!-- 文章标题 添加链接-->
+            <router-link :to="`/post_detail/${post.id}`">
+                {{post.title}}
+            </router-link>
+            <!-- 文章图片 添加链接-->
+            <router-link :to="`/post_detail/${post.id}`">
+            <!-- 文章图片列表 -->
             <div class="img-list">
                 <img v-for="(item, index) in post.cover" :key="index" :src="item.url" v-if="index < 3" />
             </div>
+            </router-link>
+            <!-- 作者资料 -->
             <p class="post-info">
                 <!-- 作者昵称 -->
                 <span>{{post.user.nickname}}</span>
@@ -41,16 +53,23 @@
 
         <!-- 视频显示布局组件 -->
         <div class="video-cart" v-if="post.type === 2 && post.cover.length === 1">
-            <!-- 视频标题 -->
+            <!-- 视频标题 添加链接-->
+            <router-link :to="`/post_detail/${post.id}`">
             <div class="post-title">{{post.title}}</div>
-            <!-- 视频内容链接 -->
+            </router-link>
+            <!-- 视频内容链接 添加链接-->
+            <router-link :to="`/post_detail/${post.id}`">
+            <!-- 视频播放 -->
             <div class="video">
+                <!-- 封面图片 -->
                 <img :src="post.cover[0].url" alt />
                 <span class="video-layer">
                     <!-- 视频播放按钮字体图标 -->
                     <i class="iconfont iconshipin"></i>
                 </span>
             </div>
+            </router-link>
+            <!-- 作者资料 -->
             <p class="post-info">
                 <!-- 作者昵称 -->
                 <span>{{post.user.nickname}}</span>
@@ -79,6 +98,7 @@ export default {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1 / 360 * 100vw #ccc solid;
+    font-size: 14 / 360 * 100vw;
     // 左侧文字样式
     .card-left {
         flex: 1;
@@ -88,7 +108,6 @@ export default {
         height: 80 / 360 * 100vw;
         // 文章标题样式
         .post-title {
-            font-size: 14 / 360 * 100vw;
             line-height: 1.5;
             margin-bottom: 5 / 360 * 100vw;
             display: -webkit-box;
@@ -117,6 +136,7 @@ export default {
 .img-cart {
     padding: 10 / 360 * 100vw 10 / 360 * 100vw;
     border-bottom: 1 / 360 * 100vw #ccc solid;
+    font-size: 14 / 360 * 100vw;
     // 文章标题样式
     .post-title {
         font-size: 14 / 360 * 100vw;
@@ -150,7 +170,6 @@ export default {
 // 视频布局样式
 .video-cart {
     padding: 10 / 360 * 100vw 10 / 360 * 100vw;
-    border-bottom: 1 / 360 * 100vw #ccc solid;
     // 视频标题样式
     .post-title {
         font-size: 14 / 360 * 100vw;

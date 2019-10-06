@@ -18,7 +18,8 @@ import EditProfile from "@/pages/EditProfile";  // 导入 编辑资料组件
 import UserFollow from "@/pages/UserFollow";    // 导入 我的关注组件
 import UserComment from "@/pages/UserComment";  // 导入 我的跟帖组件
 
-import Index from "@/pages/Index";  // 导入 新闻首页组件
+import Index from "@/pages/Index";              // 导入 新闻首页组件
+import PostDetail from "@/pages/PostDetail";    // 导入 文章详情组件
 
 
 // 注册 路由组件 插件
@@ -47,7 +48,8 @@ const routes = [
     { path: "/edit_profile", component: EditProfile },  // 匹配 编辑资料组件地址
     { path: "/user_follow", component: UserFollow },    // 匹配 我的关注组件地址
     { path: "/user_comment", component: UserComment },  // 匹配 我的跟帖组件地址
-    { path: "/", component: Index }  // 匹配 新闻首页组件地址
+    { path: "/", component: Index },                    // 匹配 新闻首页组件地址
+    { path: "/post_detail/:id", component: PostDetail },// 匹配 文章详情组件地址
 ]
 
 
