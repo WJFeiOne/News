@@ -96,7 +96,7 @@ export default {
         if (message === "登录成功") {       // 判断 请求状态是否成功 
           localStorage.setItem("token", data.token);      // 请求成功 把 token 保存到本地
           localStorage.setItem("user_id", data.user.id);  // 请求成功 把 用户id 保存到本地
-          this.$router.push("/personal");                 // 请求成功 跳转到 个人中心 页面
+          this.$router.push("/");                         // 请求成功 跳转到 新闻首页 页面
         }
       });
     }

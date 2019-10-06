@@ -34,8 +34,12 @@
 
         <!-- 调用条形组件 -->
         <CellBar label="我的收藏" text="文章/视频" />
+
         <!-- 调用条形组件 -->
-        <CellBar label="退出" @click="handleLogout" />
+        <CellBar label="返回首页" text="" @click="returnIndex" />
+
+        <!-- 退出登录 -->
+        <span class="handleLogout" @click="handleLogout">退出</span>
     </div>
 </template>
 
@@ -64,9 +68,13 @@ export default {
     methods: {
         //点击 退出登录
         handleLogout() {
-            localStorage.removeItem("token"); // 清除本地的 token
+            localStorage.removeItem("token");   // 清除本地的 token
             localStorage.removeItem("user_id"); // 清除本地的 用户id
-            this.$router.replace("/login"); // replace 替换地址为登录页
+            this.$router.replace("/login");     // replace 替换地址为登录页
+        },
+        // 点击 返回首页
+        returnIndex(){
+            this.$router.replace("/");          // replace 替换地址为新闻首页
         }
     },
 
@@ -131,5 +139,18 @@ export default {
     span {  // 字体箭头样式
         font-size: 16 / 360 * 100vw;
     }
+}
+// 退出登录样式
+.handleLogout{
+    width: 90%;
+    height: 13.33333333vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d81e06;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 5.55555556vw;
+    margin: 20px auto;
 }
 </style>
