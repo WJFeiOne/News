@@ -64,7 +64,7 @@ export default {
     width: 100%;
     border-top: 1 / 360 * 100vw #eee solid;
     padding: 0 10 / 360 * 100vw;
-    margin-top: 50 / 360 * 100vw;
+    margin-top: 100 / 360 * 100vw;
     box-sizing: border-box;
 }
 
