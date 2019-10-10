@@ -1,0 +1,59 @@
+// 新闻首页组件样式 
+.header {
+    height: 50 / 360 * 100vw;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 10 / 360 * 100vw;
+    background: #f00; 
+    // 头部 logo 样式
+    .logo {
+        font-size: 50 / 360 * 100vw;
+        color: #fff;
+    }
+    // 个人中心字体图标样式
+    .personal {
+        font-size: 22 / 360 * 100vw;
+        color: #fff;
+    }
+    // 头部搜索链接样式
+    .header-search {
+        height: 34 / 360 * 100vw;
+        background: rgba(255, 255, 255, 0.5);
+        flex: 1;
+        margin: 0 30 / 360 * 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 50 / 360 * 100vw;
+        font-size: 14 / 360 * 100vw;
+        span{
+            font-size: 14 / 360 * 100vw;
+        }
+        i {
+            margin-left: 5 / 360 * 100vw;
+        }
+    }
+}
+
+// 修改第三方栏目样式
+/deep/ .van-tabs__nav{
+    background:#f6f6f6;
+    .van-tab {
+        font-size:14 / 360 * 100vw;
+        line-height:44 / 360 * 100vw;
+    }
+}
+
+// 修改第三方栏目样式
+/deep/ .van-tabs__line{
+    width:40 / 360 * 100vw;
+    height:1 / 360 * 100vw;
+    margin-left: -2 / 360 * 100vw;
+}
+
+// 修改第三方栏目样式
+/deep/ .van-tabs--line .van-tabs__wrap{ 
+    height:44 / 360 * 100vw; 
+}

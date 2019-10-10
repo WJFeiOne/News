@@ -1,0 +1,49 @@
+.header {
+  height: 13.88888889vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.77777778vw;
+  background: #f00;
+}
+.header .logo {
+  font-size: 13.88888889vw;
+  color: #fff;
+}
+.header .personal {
+  font-size: 6.11111111vw;
+  color: #fff;
+}
+.header .header-search {
+  height: 9.44444444vw;
+  background: rgba(255, 255, 255, 0.5);
+  flex: 1;
+  margin: 0 8.33333333vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 13.88888889vw;
+  font-size: 3.88888889vw;
+}
+.header .header-search span {
+  font-size: 3.88888889vw;
+}
+.header .header-search i {
+  margin-left: 1.38888889vw;
+}
+ /deep/ .van-tabs__nav {
+  background: #f6f6f6;
+}
+ /deep/ .van-tabs__nav .van-tab {
+  font-size: 3.88888889vw;
+  line-height: 12.22222222vw;
+}
+ /deep/ .van-tabs__line {
+  width: 11.11111111vw;
+  height: 0.27777778vw;
+  margin-left: -0.55555556vw;
+}
+ /deep/ .van-tabs--line .van-tabs__wrap {
+  height: 12.22222222vw;
+}
