@@ -1,0 +1,35 @@
+.comment-item {
+  padding: 2.77777778vw;
+  font-size: 3.88888889vw;
+  line-height: 1.8;
+  border-bottom: 0.27777778vw #ccc solid;
+}
+.comment-item .time {
+  font-size: 3.33333333vw;
+  color: #999;
+  margin-bottom: 1.38888889vw;
+}
+.comment-item .parent {
+  background: #eee;
+  padding: 2.77777778vw;
+  margin-bottom: 1.38888889vw;
+}
+.comment-item .parent .parent-title {
+  font-size: 3.33333333vw;
+  color: #999;
+}
+.comment-item .content {
+  margin-bottom: 1.38888889vw;
+}
+.comment-item .article-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 3.33333333vw;
+  color: #999;
+}
+.comment-item .article-link p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
