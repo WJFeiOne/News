@@ -1,0 +1,109 @@
+.article {
+  padding: 0 2.77777778vw;
+  padding-top: 16.66666667vw;
+}
+.article .post-content {
+  font-size: 3.88888889vw;
+  line-height: 1.5;
+}
+.article .post-content /deep/ img {
+  max-width: 100%;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 16.66666667vw;
+  padding: 0 2.77777778vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.header .header-left * {
+  vertical-align: middle;
+}
+.header .iconjiantou2 {
+  font-size: 4.44444444vw;
+}
+.header .iconnew {
+  font-size: 13.88888889vw;
+}
+h3 {
+  font-size: 4.44444444vw;
+  margin-bottom: 1.38888889vw;
+}
+.post-info {
+  font-size: 3.33333333vw;
+  color: #999;
+  margin-bottom: 2.77777778vw;
+}
+.focus {
+  width: 17.22222222vw;
+  height: 7.22222222vw;
+  line-height: 7.22222222vw;
+  text-align: center;
+  font-size: 3.33333333vw;
+  background: red;
+  color: #fff;
+  border-radius: 27.77777778vw;
+  border: 0.27777778vw red solid;
+}
+.focus_active {
+  border: 0.27777778vw #ccc solid;
+  color: #333;
+  background: none;
+}
+.video-wrap {
+  padding: 0 2.77777778vw;
+  padding-top: 16.66666667vw;
+}
+.video-wrap .video {
+  width: 100%;
+}
+.video-wrap .video-info {
+  padding: 2.77777778vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video-wrap .video-info .video-user {
+  display: flex;
+  align-items: center;
+  font-size: 3.33333333vw;
+  color: #999;
+}
+.video-wrap .video-info img {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  margin-right: 2.77777778vw;
+}
+.post-btns {
+  margin-top: 8.33333333vw;
+  display: flex;
+  justify-content: space-around;
+}
+.post-btns span {
+  padding: 0 4.16666667vw;
+  height: 8.33333333vw;
+  line-height: 8.33333333vw;
+  font-size: 3.33333333vw;
+  border: 0.27777778vw #ddd solid;
+  border-radius: 13.88888889vw;
+}
+.post-btns .icondianzan {
+  font-size: 4.44444444vw;
+}
+.post-btns .like_active {
+  border: 0.27777778vw red solid;
+}
+.post-btns .like_active i {
+  color: red;
+}
+.post-btns .iconweixin {
+  color: #07c907;
+  font-size: 4.44444444vw;
+}
