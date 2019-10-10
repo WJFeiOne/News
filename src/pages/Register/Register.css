@@ -1,0 +1,26 @@
+.container {
+  padding: 5.55555556vw;
+}
+.container .close span {
+  font-size: 7.5vw;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo span {
+  display: block;
+  font-size: 35vw;
+  color: #d81e06;
+}
+.inputs input {
+  margin-bottom: 5.55555556vw;
+}
+.tips {
+  text-align: right;
+  margin-bottom: 5.55555556vw;
+  font-size: 4.44444444vw;
+}
+.tips a {
+  color: #3385ff;
+}
