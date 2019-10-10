@@ -10,6 +10,7 @@ import UserComment from "@/pages/UserComment/UserComment_1";   // 导入 我的�
 
 import Index from "@/pages/Index/Index_1";                     // 导入 新闻首页组件
 import PostDetail from "@/pages/PostDetail/PostDetail_1";      // 导入 文章详情组件
+import Comment from "@/pages/Comment/Comment_1";               // 导入 评论跟帖组件
 
 
 // 创建 路由配置
@@ -23,6 +24,7 @@ const routes = [
     
     { path: "/", component: Index },                        // 匹配 新闻首页组件地址
     { path: "/post_detail/:id", component: PostDetail },    // 匹配 文章详情组件地址
+    { path: "/post_comment/:id", component: Comment },      // 匹配 评论跟贴组件地址
 ]
 
 

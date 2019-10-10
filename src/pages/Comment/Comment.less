@@ -1,0 +1,48 @@
+// 评论跟帖样式
+.container{
+    padding-bottom:100 / 360 * 100vw;
+}
+
+// 评论列表样式
+.comment{
+    padding:15px 10px;
+    border-bottom: 1px #eee solid;
+    // 评论详情样式
+    .comment-info{ 
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:10px;
+    }
+    // 用户信息样式
+    .comment-user{
+        display: flex;
+        align-items: center;
+        // 用户头像样式
+        img{
+            width:40 / 360 * 100vw;
+            height:40 / 360 * 100vw;
+            display: block;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right:10px;
+        }
+        // 用户昵称样式
+        .user-info{
+            font-size:13px;
+            // 发布时间样式
+            span{
+                font-size:12px;
+                color:#999;
+            }
+        }
+    }
+    // 回复评论样式 
+    .reply{
+        font-size:13px;
+        color:#666;
+    }
+    // 评论内容样式
+    .comment-content{
+        padding: 15px 0 0;
+    }
+}

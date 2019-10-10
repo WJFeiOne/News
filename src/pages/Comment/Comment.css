@@ -1,0 +1,38 @@
+.container {
+  padding-bottom: 27.77777778vw;
+}
+.comment {
+  padding: 15px 10px;
+  border-bottom: 1px #eee solid;
+}
+.comment .comment-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.comment .comment-user {
+  display: flex;
+  align-items: center;
+}
+.comment .comment-user img {
+  width: 11.11111111vw;
+  height: 11.11111111vw;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.comment .comment-user .user-info {
+  font-size: 13px;
+}
+.comment .comment-user .user-info span {
+  font-size: 12px;
+  color: #999;
+}
+.comment .reply {
+  font-size: 13px;
+  color: #666;
+}
+.comment .comment-content {
+  padding: 15px 0 0;
+}
