@@ -1,0 +1,30 @@
+.follow-item {
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px #ccc solid;
+}
+.follow-item img {
+  display: block;
+  width: 16.66666667vw;
+  height: 16.66666667vw;
+  border-radius: 50%;
+}
+.follow-item .item-center {
+  flex: 1;
+  padding: 0 2.77777778vw;
+  font-size: 3.33333333vw;
+}
+.follow-item .item-center span {
+  color: #999;
+}
+.follow-item .cancel {
+  display: block;
+  background: #ccc;
+  padding: 0 2.77777778vw;
+  height: 7.22222222vw;
+  line-height: 7.22222222vw;
+  font-size: 3.33333333vw;
+  border-radius: 13.88888889vw;
+}
