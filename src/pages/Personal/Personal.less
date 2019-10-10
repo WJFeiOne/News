@@ -1,0 +1,45 @@
+// 组件布局样式
+.profile {
+    display: flex;
+    padding: 20 / 360 * 100vw 10 / 360 * 100vw;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5 / 360 * 100vw #eee solid;
+    img {  // 头像样式
+        width: 70 / 360 * 100vw;
+        height: 70 / 360 * 100vw;
+        border-radius: 50%;
+    }
+    .profile-center {  // 详情样式
+        flex: 1;
+        padding: 0 10 / 360 * 100vw;
+        .name {  // 昵称样式
+            font-size: 16 / 360 * 100vw;
+            span {
+                color: #75b9eb;
+                font-size: 16 / 360 * 100vw;
+            }
+        }
+        .time {  // 时间样式
+            color: #666;
+            font-size: 14 / 360 * 100vw;
+            margin-top: 5 / 360 * 100vw;
+        }
+    }
+    span {  // 字体箭头样式
+        font-size: 16 / 360 * 100vw;
+    }
+}
+// 退出登录样式
+.handleLogout{
+    width: 90%;
+    height: 13.33333333vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d81e06;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 5.55555556vw;
+    margin: 20px auto;
+}
