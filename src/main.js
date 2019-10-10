@@ -1,6 +1,4 @@
-/* 
-    项目 入口文件 
-*/
+/* 项目 入口文件 */
 
 
 import Vue from "vue";                // 导入 Vue 库文件
@@ -8,27 +6,15 @@ import Vant from 'vant';              // 导入 Vant-UI 组件
 import axios from "axios";            // 导入 axios 组件
 import VueRouter from "vue-router";   // 导入 路由构造函数
 import App from "@/App";              // 导入 入口组件
-
-import Login from "@/pages/Login";       // 导入 登录组件
-import Register from "@/pages/Register"  // 导入 注册组件
-import {Toast} from "vant"               // 导入 轻提示组件
-
-import Personal from "@/pages/Personal";        // 导入 个人中心组件
-import EditProfile from "@/pages/EditProfile";  // 导入 编辑资料组件
-import UserFollow from "@/pages/UserFollow";    // 导入 我的关注组件
-import UserComment from "@/pages/UserComment";  // 导入 我的跟帖组件
-
-import Index from "@/pages/Index";              // 导入 新闻首页组件
-import PostDetail from "@/pages/PostDetail";    // 导入 文章详情组件
+import {Toast} from "vant"            // 导入 轻提示组件
+import routes from "@/routes/routes"; // 导入 路由配置 
 
 
 // 注册 路由组件 插件
 Vue.use(VueRouter);
 
-
 // 注册 Vant-UI 组件
 Vue.use(Vant)
-
 
 // 把 axios 挂载到原型
 Vue.prototype.$axios=axios;
@@ -38,19 +24,6 @@ Vue.prototype.$axios=axios;
 // axios.defaults.baseURL = "http://localhost:3000";
 // 添加 手机测试 基准路径
 axios.defaults.baseURL = "http://192.168.43.118:3000";
-
-
-// 创建 路由配置
-const routes = [
-    { path: "/login", component: Login}, // 匹配 登录组件地址
-    { path: "/register", component: Register}, // 匹配 注册组件地址
-    { path: "/personal", component: Personal},  // 匹配 个人中心组件地址
-    { path: "/edit_profile", component: EditProfile },  // 匹配 编辑资料组件地址
-    { path: "/user_follow", component: UserFollow },    // 匹配 我的关注组件地址
-    { path: "/user_comment", component: UserComment },  // 匹配 我的跟帖组件地址
-    { path: "/", component: Index },                    // 匹配 新闻首页组件地址
-    { path: "/post_detail/:id", component: PostDetail },// 匹配 文章详情组件地址
-]
 
 
 // 创建 路由对象
