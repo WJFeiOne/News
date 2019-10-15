@@ -9,12 +9,16 @@
             <!-- 头部 logo -->
             <span class="iconfont iconnew logo"></span>
             <!-- 头部搜索链接 -->
-            <div class="header-search">
+            <router-link to="/search" class="link-search">
+                <!-- 头部搜索样式 -->
+                <div class="header-search">
                 <!-- 搜索字体图标 -->
                 <span class="iconfont iconsearch"></span>
                 <!-- 输入框提示 -->
                 <i>搜索新闻</i>
-            </div>
+                </div>
+            </router-link>
+            
             <!-- 个人中心链接 -->
             <router-link to="/personal">
                 <!-- 个人中心字体图标 -->

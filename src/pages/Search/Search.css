@@ -1,0 +1,36 @@
+.header {
+  height: 16.66666667vw;
+  padding: 0 2.77777778vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.header .iconjiantou2 {
+  font-size: 4.44444444vw;
+}
+.header .input-wrap {
+  position: relative;
+  flex: 1;
+  margin: 0 2.77777778vw;
+}
+.header .input-wrap .iconsearch {
+  position: absolute;
+  left: 2.77777778vw;
+  top: 3.33333333vw;
+  font-size: 4.44444444vw;
+}
+.header .input-wrap input {
+  width: 100%;
+  display: block;
+  height: 11.11111111vw;
+  background: #fff;
+  border: 0.27777778vw #eee solid;
+  border-radius: 13.88888889vw;
+  padding: 0 4.16666667vw 0 8.33333333vw;
+  font-size: 3.33333333vw;
+  box-sizing: border-box;
+}
+.header .search-btn {
+  font-size: 3.88888889vw;
+}
