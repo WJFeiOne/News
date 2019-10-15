@@ -21,9 +21,9 @@ Vue.prototype.$axios=axios;
 
 
 // 基准路径，以后每次请求都会自动在前面加上该路径
-// axios.defaults.baseURL = "http://localhost:3000";
+axios.defaults.baseURL = "http://localhost:3000";
 // 添加 手机测试 基准路径
-axios.defaults.baseURL = "http://192.168.43.118:3000";
+// axios.defaults.baseURL = "http://192.168.43.118:3000";
 
 
 // 创建 路由对象
