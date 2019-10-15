@@ -4,8 +4,11 @@
 <template>
    <!-- 入口组件 -->
    <div>
-        <!-- 入口组件占位 -->
-        <router-view></router-view>
+        <!-- 状态保留组件 -->
+        <keep-alive include="index,search">
+            <!-- 入口组件占位 -->
+            <router-view></router-view>
+        </keep-alive>
    </div>
 </template>
 

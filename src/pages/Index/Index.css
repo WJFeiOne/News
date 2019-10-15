@@ -14,11 +14,14 @@
   font-size: 6.11111111vw;
   color: #fff;
 }
+.header .link-search {
+  display: block;
+  flex: 1;
+  margin: 0 8.33333333vw;
+}
 .header .header-search {
   height: 9.44444444vw;
   background: rgba(255, 255, 255, 0.5);
-  flex: 1;
-  margin: 0 8.33333333vw;
   display: flex;
   align-items: center;
   justify-content: center;

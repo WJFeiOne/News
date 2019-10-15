@@ -3,6 +3,8 @@ import PostCard from "@/components/PostCard"
 
 // 新闻首页 组件实例 
 export default {
+    // 指定 组件别名
+    name: "index", 
     // 指定 新闻首页 数据
     data(){
         // 返回 新闻首页 数据
